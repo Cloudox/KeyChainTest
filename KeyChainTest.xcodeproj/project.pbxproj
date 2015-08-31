@@ -14,6 +14,9 @@
 		ADB127811B947D740055A7EB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADB127801B947D740055A7EB /* Images.xcassets */; };
 		ADB127841B947D740055A7EB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADB127821B947D740055A7EB /* LaunchScreen.xib */; };
 		ADB127901B947D740055A7EB /* KeyChainTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB1278F1B947D740055A7EB /* KeyChainTestTests.m */; };
+		ADB1279A1B947EB20055A7EB /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADB127991B947EB20055A7EB /* Security.framework */; };
+		ADB1279D1B947F080055A7EB /* KeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB1279C1B947F080055A7EB /* KeychainItemWrapper.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		ADB127A01B94834F0055A7EB /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB1279F1B94834F0055A7EB /* InfoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,11 @@
 		ADB127891B947D740055A7EB /* KeyChainTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeyChainTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADB1278E1B947D740055A7EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ADB1278F1B947D740055A7EB /* KeyChainTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyChainTestTests.m; sourceTree = "<group>"; };
+		ADB127991B947EB20055A7EB /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		ADB1279B1B947F080055A7EB /* KeychainItemWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainItemWrapper.h; sourceTree = "<group>"; };
+		ADB1279C1B947F080055A7EB /* KeychainItemWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainItemWrapper.m; sourceTree = "<group>"; };
+		ADB1279E1B94834F0055A7EB /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
+		ADB1279F1B94834F0055A7EB /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADB1279A1B947EB20055A7EB /* Security.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +75,7 @@
 				ADB127721B947D740055A7EB /* KeyChainTest */,
 				ADB1278C1B947D740055A7EB /* KeyChainTestTests */,
 				ADB127711B947D740055A7EB /* Products */,
+				ADB127991B947EB20055A7EB /* Security.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -85,6 +95,10 @@
 				ADB127781B947D740055A7EB /* AppDelegate.m */,
 				ADB1277A1B947D740055A7EB /* ViewController.h */,
 				ADB1277B1B947D740055A7EB /* ViewController.m */,
+				ADB1279E1B94834F0055A7EB /* InfoViewController.h */,
+				ADB1279F1B94834F0055A7EB /* InfoViewController.m */,
+				ADB1279B1B947F080055A7EB /* KeychainItemWrapper.h */,
+				ADB1279C1B947F080055A7EB /* KeychainItemWrapper.m */,
 				ADB1277D1B947D740055A7EB /* Main.storyboard */,
 				ADB127801B947D740055A7EB /* Images.xcassets */,
 				ADB127821B947D740055A7EB /* LaunchScreen.xib */,
@@ -219,8 +233,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADB1279D1B947F080055A7EB /* KeychainItemWrapper.m in Sources */,
 				ADB1277C1B947D740055A7EB /* ViewController.m in Sources */,
 				ADB127791B947D740055A7EB /* AppDelegate.m in Sources */,
+				ADB127A01B94834F0055A7EB /* InfoViewController.m in Sources */,
 				ADB127761B947D740055A7EB /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

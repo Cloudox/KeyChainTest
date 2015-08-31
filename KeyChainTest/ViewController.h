@@ -9,7 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+@property (strong, nonatomic) IBOutlet UITextField *usernameLabel;
+@property (strong, nonatomic) IBOutlet UITextField *passwordLabel;
 
+- (IBAction)login:(id)sender;
 
 @end
 
