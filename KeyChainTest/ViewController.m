@@ -21,12 +21,12 @@
 }
 
 - (IBAction)login:(id)sender {
-    NSString *username = self.usernameLabel.text;
-    NSString *password = self.passwordLabel.text;
-    if (![username isEqualToString:@""] & ![password isEqualToString:@""]) {// 登录
-        KeychainItemWrapper *keychain = [[KeychainItemWrapper alloc] initWithIdentifier:@"Login" accessGroup:nil];
-        [keychain setObject:username forKey:(__bridge id)(kSecAttrAccount)];
-        [keychain setObject:password forKey:(__bridge id)(kSecValueData)];
+    NSString *username = self.usernameLabel.text;// 获取输入的用户名
+    NSString *password = self.passwordLabel.text;// 获取输入的密码
+    if (![username isEqualToString:@""] && ![password isEqualToString:@""]) {// 非空则保存
+        KeychainItemWrapper *keychain = [[KeychainItemWrapper alloc] initWithIdentifier:@"Login" accessGroup:nil];// 1
+        [keychain setObject:username forKey:(__bridge id)(kSecAttrAccount)];// 2
+        [keychain setObject:password forKey:(__bridge id)(kSecValueData)];// 3
     }
 }
 

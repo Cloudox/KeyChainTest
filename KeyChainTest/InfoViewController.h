@@ -11,5 +11,8 @@
 @interface InfoViewController : UIViewController
 @property (strong, nonatomic) IBOutlet UILabel *usernameLabel;
 @property (strong, nonatomic) IBOutlet UILabel *passwordLabel;
+@property (strong, nonatomic) IBOutlet UITextField *nPWText;
+@property (strong, nonatomic) IBOutlet UILabel *nPWLabel;
 
+- (IBAction)changePW:(id)sender;
 @end

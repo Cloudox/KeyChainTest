@@ -432,6 +432,7 @@
 				ADB127951B947D740055A7EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ADB127961B947D740055A7EB /* Build configuration list for PBXNativeTarget "KeyChainTestTests" */ = {
 			isa = XCConfigurationList;
@@ -440,6 +441,7 @@
 				ADB127981B947D740055A7EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
